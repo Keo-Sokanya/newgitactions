@@ -1,0 +1,26 @@
+{
+  "name": "newgitactions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keo-Sokanya/newgitactions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Keo-Sokanya/newgitactions/issues"
+  },
+  "homepage": "https://github.com/Keo-Sokanya/newgitactions#readme",
+  "dependencies": {
+    "chai": "^5.2.0",
+    "express": "^5.1.0",
+    "mocha": "^11.7.1"
+  }
+}
