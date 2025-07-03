@@ -2,9 +2,11 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build:
@@ -20,9 +22,11 @@ jobs:
         node-version: '16'
 
     - name: Install dependencies
-      run: |
-        npm install
+      run: npm install
+      # or yarn install if you prefer
+
+    - name: Install Mocha globally
+      run: npm install -g mocha
 
     - name: Run tests
-      run: |
-        npm test
+      run: mocha
